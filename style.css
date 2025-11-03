@@ -78,7 +78,7 @@ padding:30px 100px;
         content:"HI I'M DEEPAN R";
     }
     50%{
-        content: "I'M A Web Develope";
+        content: "I'M A Data Analysts";
     }
     100%{
         content: "HI I'M DEEPAN R";
@@ -489,121 +489,103 @@ font-size: 20px;
  
 
 /* projects */
-.cards{
-     background-color: #343A40;
-     padding: 50px;
-
-
+.cards {
+  background-color: #343A40;
+  padding: 50px;
+  color: white;
+  text-align: center;
 }
-.cards h1{
-    text-align: center;
-}
-.card-sec{
-    margin:25px 60px;
-    flex-wrap: wrap;
-}
-.card1{
-margin: 20px;
-border: none;
-border-radius: 5px;
-background-color: #20C997;
 
+.cards h1 {
+  margin-bottom: 30px;
+}
 
+/* Tabs */
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.tab-btn {
+  background: transparent;
+  border: 2px solid #20C997;
+  color: #20C997;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+  background-color: #20C997;
+  color: #fff;
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.tab-content.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Card Section */
+.card-sec {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card1 {
+  width: 20rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #20C997;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.card1:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body {
+  padding: 15px;
 }
 
 .card-heading {
-    color: #20C997 !important;
-}
-.card-img{
-    height: 200px;
-    object-fit: contain;
-}
-.card-link {
-    margin-bottom: 40px;
-    margin-left: 40px;
+  color: #343A40;
+  font-weight: bold;
 }
 
-.card1:hover{
- transform: scale(1.05); 
-    transition: transform 0.3s ease;
-    overflow: hidden;
-
-}
-/* LAPTOP SCREENS */
-@media (max-width: 1024px) {
-    .cards {
-        padding: 40px;
-    }
-    .card-sec {
-        gap: 100px;
-        margin: 50px;
-    }
-    
-    .card-p {
-        font-size: 1rem; /* Slightly reduced text size */
-    }
-    .card-heading {
-        font-size: 1.4rem;
-           color: #20C997;
-
-    }
-    .card-btn {
-        padding: 10px 16px;
-        font-size: 0.9rem;
-    }
+.card-p {
+  font-size: 0.95rem;
+  text-align: justify;
 }
 
+/* Responsive */
 @media (max-width: 992px) {
-    .card-sec {
-        gap: 40px;
-        margin: 20px;
-    }
-    .card1 {
-        width: 25rem !important;
-    }
+  .card1 {
+    width: 90%;
+  }
 }
 
-/* Mobile large */
-@media (max-width: 768px) {
-    .card-sec {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-    .card1 {
-        width: 90% !important;
-    }
-    .card-body {
-        padding: 15px;
-    }
-    .card-p {
-        font-size: 0.95rem;
-    }
-}
-
-/* Mobile small */
-@media (max-width: 480px) {
-    .cards {
-        padding: 30px 15px;
-    }
-    .card1 {
-        width: 100% !important;
-        margin: 0;
-    }
-    .card-body {
-        padding: 12px;
-    }
-    .card-heading {
-        font-size: 1.2rem;
-    }
-    .card-p {
-        font-size: 0.9rem;
-    }
-    .card-btn {
-        padding: 8px 12px;
-        font-size: 0.85rem;
-    }
-}
 
 /* footer */
 .footer {
